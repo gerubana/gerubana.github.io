@@ -8,4 +8,17 @@
 <body>
     <a href="pklive://somepath">打開我的 App</a>
 </body>
+
+<script>
+    window.onload = function() {
+      // 自定義的 URL Scheme
+      window.location = "pklive://somepath";
+  
+      // 如果應用未安裝，跳轉到下載頁或顯示提示
+      setTimeout(function() {
+        window.location = "https://google.com";
+      }, 2000); // 2 秒後跳轉
+    };
+ </script>
+
 </html>
