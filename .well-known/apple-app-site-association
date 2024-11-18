@@ -4,7 +4,11 @@
         "details": [
             {
                 "appID": "L984BAK3A8.com.ddlive.sugar",
-                "paths": [ "/download" ]
+                "paths": [ "*" ]
+            },
+            {
+                "appID": "L984BAK3A8.com.pklive.spid",
+                "paths": [ "*" ]
             }
         ]
     }
