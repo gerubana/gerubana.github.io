@@ -11,13 +11,28 @@
 
 <script>
     function openApp() {
-        // 嘗試打開 App 的 URL Scheme
-        window.location.href = "pklive://somepath";
+        const now = Date.now();
+        const timeout = 2000; // 2 秒內判斷是否跳轉
 
-        // 如果應用未安裝，則在 2 秒後跳轉到其他網頁
-        setTimeout(function() {
-            window.location.href = "https://google.com"; // 替換為 App Store 或其他網址
-        }, 2000);
+        // 嘗試打開應用
+        window.location.href = "myapp://somepath";
+
+        // 檢查是否跳轉成功
+        const checkVisibility = setTimeout(function () {
+            const timeElapsed = Date.now() - now;
+
+            if (document.visibilityState === "visible" && timeElapsed >= timeout) {
+                // 應用未安裝，跳轉到其他網頁
+                window.location.href = "https://apps.apple.com/app/your-app-id"; // 替換為下載頁面的鏈接
+            }
+        }, timeout);
+
+        // 如果用戶成功跳轉到應用，頁面將變為不可見，清除回退計時器
+        document.addEventListener("visibilitychange", function () {
+            if (document.visibilityState === "hidden") {
+                clearTimeout(checkVisibility);
+            }
+        });
     }
  </script>
 
