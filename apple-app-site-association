@@ -5,6 +5,10 @@
             {
                 "appID": "L984BAK3A8.com.ddlive.sugar",
                 "paths": [ "*" ]
+            },
+            {
+                "appID": "L984BAK3A8.com.pklive.spid",
+                "paths": [ "*" ]
             }
         ]
     }
