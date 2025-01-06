@@ -1,0 +1,154 @@
+:root {
+    --record-earn-amount-color: #0085FF;
+}
+
+body {
+    touch-action: manipulation;
+}
+
+.big-button-background {
+    background: linear-gradient(180deg, #40e8ff 0%, #1c69ff 100%);
+}
+
+.verification-code-color {
+    background-color: transparent;
+    color: #0085ff;
+    border-color: #0085ff;
+}
+
+.main-link-color {
+    color: #0085ff;
+}
+
+.light-link-color {
+    color: #40e8ff;
+}
+
+.short-cut-button {
+    border-radius: 7px;
+    background: linear-gradient(140deg, #e9edf1 7.5%, #ffffff 100%);
+    box-shadow: 0 2px 0 rgba(165, 182, 203, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2px 0 2px 0;
+    color: #0085ff;
+}
+
+.short-cut-button-active {
+    background: linear-gradient(140deg, #ffe9fa 7.5%, #00a3ff 100%);
+    box-shadow: 0 2px 0 rgba(0, 93, 203, 0.8);
+    color: white;
+}
+
+.nav-bar-right-button {
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 10px;
+    background: #F7F5FA;
+    border-radius: 16px;
+    gap: 5px;
+}
+
+.nav-bar-right-button > img {
+    height: 16px;
+    width: auto;
+}
+
+.nav-bar-right-button > span {
+    background: #B89FE7 0%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 13px;
+}
+
+.main-tab .van-tabs__line {
+    padding-bottom: 1px;
+    background: linear-gradient(90deg, #40e8ff 0%, #1c69ff 100%);
+}
+
+.main-tab .van-tab {
+    font-size: 1rem;
+}
+
+.main-tab .van-tab--active {
+    font-size: 1.1rem;
+}
+
+.channel-block {
+    border: 1px solid #e0e0e0;
+}
+
+.channel-block-active {
+    position: relative;
+    background-color: #f0f8fa;
+    border: 1px solid #0085ff;
+}
+
+.channel-block-active::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url('/images/badge_choose.svg');
+    width: 25px;
+    height: 20px;
+    content: ""
+}
+
+.balance-panel-background {
+    background-image: url('/images/bg_commer_exchange.png');
+}
+
+.balance-background {
+    background-image: url("/images/balance_new.png");
+}
+
+.button-text-color {
+    color: #0085ff;
+}
+
+.description-text-color {
+    color: #FF70A3;
+}
+
+.record-total-bet-earn-color {
+    color: #0085FF;
+}
+
+.record-earn-amount-color {
+    color: #0085FF;
+}
+
+.agent-profile-edit-button {
+    margin-top:10px;
+    background:#EBEEFF;
+    color:#0085FF;
+    border-radius: 8px;
+}
+
+.my-detail-btn-search {
+    background-color: #0085FF;
+    border: 0;
+    height: 2rem;
+    padding:.2rem 1rem;
+    border-radius:.3rem ;
+}
+
+.search-button {
+    color:white;
+    background-color:#0085FF;
+    border-radius:8px;
+    padding:8px 12px;
+  }
+
+.text-no-wrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

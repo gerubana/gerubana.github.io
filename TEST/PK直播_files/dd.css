@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'headlinea';
+    src: url('/fonts/headlinea-regular.woff') format('woff'),
+         url('/fonts/headlinea-regular.ttf') format('truetype'),
+         url('/fonts/headlinea-regular.eot'),
+         url('/fonts/headlinea-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'YouSheBiaoTiHei';
+    src: url('/fonts/YouSheBiaoTiHei-2.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+:root {
+    --record-earn-amount-color: green;
+}
+
+.big-button-background {
+    background: linear-gradient(180deg, #9f61fc 0%, #6759ee 100%);
+}
+
+.new-big-button-background {
+    background: #4874ED;
+}
+
+.verification-code-color {
+    background-color: transparent;
+    color: #ed0978;
+    border-color: #ed0978;
+}
+
+.new-verification-code-color {
+    background-color: #4874ED;
+    border-color: #4874ED;
+    color: white;
+}
+
+.main-link-color {
+    color: #ed0978;
+}
+
+.light-link-color {
+    color: #ed0978;
+}
+
+.new-light-link-color {
+    color: #4874ED;
+}
+
+.short-cut-button {
+    border-radius: 10px;
+    background: linear-gradient(180deg, #FEFDFF 0%, #F8F0FF 100%);
+    box-shadow: 0px 2px 0px rgba(161, 112, 223, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2px 0 2px 0;
+    color: darkblue;
+}
+
+.short-cut-button-active {
+    background: linear-gradient(to bottom, mediumpurple, #ccccff);
+}
+
+.nav-bar-right-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: mediumvioletred;
+    font-size: 13px;
+    gap: 5px;
+}
+
+.nav-bar-right-button > img {
+    width: 20px;
+    height: auto;
+}
+
+.nav-bar-right-button > span {
+    background: #3d17b7;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 13px;
+}
+
+.main-tab .van-tabs__line {
+    padding-bottom: 1px;
+    background: linear-gradient(90deg, #ab78d5 0%, #695df1 100%);
+}
+
+.channel-block-active {
+    background-color: #f6f0fa;
+    border: 1px solid #b76ae7;
+}
+
+.channel-block-active::after {
+    background-image: url('/images-dd/badge_choose.svg');
+}
+
+.balance-panel-background {
+    background-image: url('/images-dd/bg_commer_exchange.png');
+}
+
+.balance-background {
+    background-image: url("/images-dd/balance.png");
+}
+
+.balance-background-new {
+    background-image: url("/images-dd/balance_new.png");
+}
+
+.button-text-color {
+    color: #844BD0;
+}
+
+.description-text-color {
+    color: mediumvioletred;
+}
+
+.record-total-bet-earn-color {
+    color: grey;
+}
+
+.agent-profile-edit-button {
+    margin-top:10px;
+    background:#ebeeff;
+    color:#6d8ad8;
+}
+
+.my-detail-btn-search {
+    background-color: #638AEF;
+    border: 0;
+    height: 2rem;
+    padding:.2rem 1rem;
+    border-radius:.3rem ;
+}
+
+.search-button {
+    color:white;
+    background-color:cornflowerblue;
+    border-radius:8px;
+    padding:8px 12px;
+  }
+
+.mission-center-condition-title {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(32, 44, 98, 0.9);
+}
+
+.mission-center-condition-sub-title {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: rgba(32, 44, 98, 0.5);
+}
